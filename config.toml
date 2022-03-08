@@ -10,7 +10,7 @@ prompt = "build-string (ansi ub) '╭─( ' (ansi rb) (date format '%I:%M:%S:%p'
 rm_always_trash = true
 skip_welcome_message = true
 startup = ["clear", "alias show = cat ", "alias dev = fzf --layout=reverse-list --inline-info --prompt='[Irfan@Dev]:~# ' --marker='▶' --pointer='▶' ", "alias irfan = fd", "alias neofetch = neofetch --ascii_distro Manjaro --ascii_colors 4 --ascii_bold on ",  "alias la = ls --long", "def nudown [] {fetch https://api.github.com/repos/nushell/nushell/releases | get assets | select name download_count}", "def nuver [] {version | pivot key value}", "alias nuopen = open", "alias open = open", "alias fzf = dev"]
-table_mode = "pager"
+table_mode = "other"# basic, compact, compact_double, light, thin, with_love, rounded, reinforced, heavy, none, other
 
 [color_config]
 header_align = "left"
@@ -21,7 +21,7 @@ auto_add_history = true
 bell_style = "audible"
 color_mode = "enabled"
 completion_prompt_limit = 100
-completion_type = "circular"
+completion_type = "circular"# circular, list, fuzzy
 edit_mode = "emacs"
 history_duplicates = "ignoreconsecutive"
 history_ignore_space = false
@@ -32,7 +32,6 @@ tab_stop = 4
 [textview]
 HOME = "$HOME"
 SHELL = "~/../usr/bin/zsh"
-USER = "tegardev"
 ZSH = "~/.oh-my-zsh"
 colored_output = true
 grid = false
@@ -47,4 +46,4 @@ theme = "TwoDark"
 true_color = true
 use_italics = true
 vcs_modification_markers = true
-wrapping_mode = "Character"
+wrapping_mode = "Character"# Character, NoWrapping
