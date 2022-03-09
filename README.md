@@ -1,1 +1,1 @@
-#nushell configueasi
+
